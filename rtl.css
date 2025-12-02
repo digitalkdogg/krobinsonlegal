@@ -1,0 +1,9 @@
+/*
+Theme Name:     Vantage-Child
+Template:       vantage
+
+This is the child theme for Vantage theme, generated with Generate Child Theme plugin by catchthemes.
+
+Right to Left text support.
+*/
+@import url("../vantage/rtl.css");
