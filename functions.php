@@ -15,6 +15,8 @@ function vantage_child_enqueue_styles() {
 }
 function my_custom_scripts() {
     wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/legal.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'waypoints', get_stylesheet_directory_uri() . '/waypoints.min.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'inview', get_stylesheet_directory_uri() . '/inview.min.js', array('jquery'), '1.0', true );
 }
 /*
  * Your code goes below
