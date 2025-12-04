@@ -1,18 +1,21 @@
-var $ = jQuery.noConflict();
+(function($) {
+    $(document).ready(function() {
+        $['legal'] = custom;
+        custom = undefined
 
-$(document).ready(function() {
-    var ele = $('.wp-block-group');
-    $(ele).each(function() {
-        var waypoint = new Waypoint.Inview({
-            element: this,
-            enter: function(direction) {
-                console.log('entering');
-                $(this.element).addClass('visible');
-            },
-            exited: function(direction) {
-                console.log('exited');
-               // $(this.element).removeClass('bollman');
-            }
+        //console.log($['legal']['disabled_animations'][0]);
+
+        var ele = $('.wp-block-group');
+        $(ele).each(function() {
+            var waypoint = new Waypoint.Inview({
+                element: this,
+                enter: function(direction) {
+                    $(this.element).addClass('visible');
+                },
+                exited: function(direction) {
+                    $(this.element).removeClass('bollman');
+                }
+            });
         });
     });
-})
+})(jQuery);
