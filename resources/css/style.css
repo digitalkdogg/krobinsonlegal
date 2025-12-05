@@ -21,3 +21,9 @@ This is the child theme for Vantage theme, generated with Generate Child Theme p
     scale:1;
     filter: unset;
 }
+
+.wp-block-group.visible-no-animation {
+    scale:1;
+    transition: unset;
+    filter: unset;
+}

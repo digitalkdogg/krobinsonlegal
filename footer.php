@@ -15,9 +15,11 @@
 <?php do_action( 'vantage_after_page_wrapper' ); ?>
 
 <?php var_dump(wp_json_encode( get_post_meta( get_the_ID() ) )); ?>
-<script>
-	var custom = <?php echo wp_json_encode( get_post_meta( get_the_ID() ) ); ?>;
-</script>
+<div id = "meta-data" style="display:none;">
+	<script>
+		var custom = <?php echo wp_json_encode( get_post_meta( get_the_ID()) ); ?>;
+	</script>
+</div>
 
 <?php wp_footer(); ?>
 
