@@ -8,6 +8,7 @@
         }
         custom = undefined
 
+
         function checkDisableAnimations() {
             if ($['legal']['disable_animation'] != undefined ) {
                 return true;
@@ -20,6 +21,7 @@
   
         var ele = $('.wp-block-group');
         $(ele).each(function() {
+
             if (!checkDisableAnimations()) {
                 var waypoint = new Waypoint.Inview({
                     element: this,
@@ -34,6 +36,15 @@
                 $(this).addClass('visible-no-animation');
             }
         });
+
+        $('.force-full-width').each(function() {
+            console.log('found one');
+            console.log(this); 
+
+            console.log($('.full-container').position().left);
+
+        });
+
     });
 })(jQuery);
 jQeury = undefined
