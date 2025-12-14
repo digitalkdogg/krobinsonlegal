@@ -14,6 +14,21 @@ body {
     overflow-x:hidden;
 }
 
+.logo-wrapper img{
+    max-height: 50px;
+    max-width: 120px;
+}
+
+#masthead.masthead-logo-in-menu .main-navigation {
+    zoom: 1;
+    box-shadow: 0px 7px 7px 2px #343538;
+}
+
+#masthead.masthead-logo-in-menu .logo > img {
+    filter: invert(1) drop-shadow(1px 7px 7px white);
+    width: 80px;
+}
+
 body.home #main{
     padding-top:0px
 }
@@ -36,7 +51,7 @@ body.home #main{
     filter: unset;
 }
 
-.wp-block-group.force-full-width{
+.wp-block-group.force-full-width, .wp-block-cover.force-full-width {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -45,7 +60,7 @@ body.home #main{
   margin-right: -50vw;
 }
 
-.wp-block-group.force-margin-width {
+.wp-block-group.force-margin-width, .wp-block-cover.force-margin-width {
 
     max-width: 1080px;
     margin-left: auto;
