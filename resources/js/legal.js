@@ -19,30 +19,18 @@
             }
         }
   
-        var ele = $('.wp-block-group');
+        var ele = $('.wp-block-group' );
         $(ele).each(function() {
-
             if (!checkDisableAnimations()) {
                 var waypoint = new Waypoint.Inview({
                     element: this,
                     enter: function(direction) {
                         $(this.element).addClass('visible');
-                    },
-                    exited: function(direction) {
-                        $(this.element).removeClass('bollman');
                     }
                 });
             } else {
                 $(this).addClass('visible-no-animation');
             }
-        });
-
-        $('.force-full-width').each(function() {
-            console.log('found one');
-            console.log(this); 
-
-            console.log($('.full-container').position().left);
-
         });
 
     });
