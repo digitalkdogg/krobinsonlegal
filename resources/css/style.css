@@ -24,6 +24,16 @@ body {
     background: #1E3249
 }
 
+.main-navigation ul li a, .main-navigation-container a[href^="tel"] {
+    color: #dbdbdb;
+}   
+
+.main-navigation-container a[href^="tel"]:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
 .main-navigation ul li:hover > a, .main-navigation ul li.focus > a {
     background: #E5D4B7;
     color: #1E3249;
@@ -59,8 +69,11 @@ body.home #main{
     padding-top:0px
 }
 
+.wp-block-cover .has-background-dim:not([class*=-background-color]) {
+    background-color:#f3edde;
+}
+
 .wp-block-group {
-    /*filter: grayscale(1) blur(3px) opacity(0.7); */
     filter:opacity(0.7);
     scale: 0.8;
     transition: all 0.5s ease-out;   
@@ -128,4 +141,37 @@ body.home #main{
     padding-left:30px;
     padding-right:30px;
     transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background {
+    background: linear-gradient(90deg, rgba(243, 237, 221, 0.84) 54%, rgba(255, 255, 255, 0.17) 83%);
+}
+
+@media screen and (max-width: 800px) {
+  .align-items-mobile-end {
+    align-items: flex-end;
+  }
+
+  .nfd-wb-hero__hero-20 img.wp-block-cover__image-background {
+    opacity:.5;
+  }
+
+  .nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background  {
+    background: rgba(243, 237, 221, 0.55);
+    opacity:0.55;
+  }
+
+  .mobile-height-45vh {
+    height: 45vh;
+    min-height:45vh;
+  }
+
+  .force-full-width .wp-block-cover__inner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.nfd-wb-hero__hero-20 .force-full-width .wp-block-columns {
+    flex-direction: column;
+  }
 }
