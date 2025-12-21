@@ -90,7 +90,7 @@ img {
 
 
 
-.list-table table, .list-table th, .list-table td {
+.list-table table, .list-table th, .list-table td, .list-table table td, .list-table table th {
     border:none;
 }   
 
