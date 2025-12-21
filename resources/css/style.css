@@ -13,6 +13,7 @@ This is the child theme for Vantage theme, generated with Generate Child Theme p
 body {
     overflow-x:hidden;
     font-family: "Montserrat", sans-serif;
+    color:#444;
 }
 
 .logo-wrapper img{
@@ -45,6 +46,30 @@ a {
 
 a:hover {
     color: #E5D4B7; 
+}
+
+p, .entry-content {
+    color:#444;
+}
+
+img {
+    border-radius: 7px;
+}
+
+.dark-text {
+    color:#635c62;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.list-table table, .list-table th, .list-table td {
+    border:none;
+}   
+
+.list-table ul {
+    margin-left:0px;
+    margin-right:0px;
+    list-style-type: disc;
+    
 }
 
 #search-icon #search-icon-icon, .mobile-nav-frame form.search input[type=search] {
@@ -99,7 +124,7 @@ body.home #main{
   margin-right: -50vw;
 }
 
-.force-full-width .wp-block-cover__inner-container {
+.force-full-width .wp-block-cover__inner-container, .force-full-width .wp-block-group__inner-container {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -144,8 +169,9 @@ body.home #main{
 }
 
 .nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background {
-    background: linear-gradient(90deg, rgba(243, 237, 221, 0.84) 54%, rgba(255, 255, 255, 0.17) 83%);
+    background: linear-gradient(90deg, rgba(243, 237, 221, 0.74) 50%, rgba(255, 255, 255, 0.1) 83%);
 }
+
 
 @media screen and (max-width: 800px) {
   .align-items-mobile-end {
@@ -162,8 +188,8 @@ body.home #main{
   }
 
   .mobile-height-45vh {
-    height: 45vh;
-    min-height:45vh;
+    height: 80vh;
+    min-height:80vh;
   }
 
   .force-full-width .wp-block-cover__inner-container {

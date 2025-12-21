@@ -33,6 +33,21 @@
             }
         });
 
+    if ($('.list-table').length) {
+
+        $('.list-table').each(function() {
+            let table = $(this);
+            $(table).find('td').each(function () {
+                let td = $(this);
+                let text = $(td).html().split('<br>');
+                $(td).html('<ul>');
+                $.each(text, function (index, value) {
+                   let val = '<li class = "has-medium-font-size">' + value + '</li>';
+                   $(td).find('ul').append(val);
+                });
+            })
+        });
+    }
     });
 })(jQuery);
 jQeury = undefined
