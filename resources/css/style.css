@@ -52,14 +52,43 @@ p, .entry-content {
     color:#444;
 }
 
-img {
-    border-radius: 7px;
-}
-
 .dark-text {
     color:#635c62;
     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
 }
+
+footer .dark-text {
+    color:#333;
+}
+
+footer h3 {
+    border-bottom:1px solid #fff;
+}
+
+footer p, footer a {
+    color:white;
+}
+
+footer aside:nth-child(2) {
+    background: #fbfaf3;
+    color: #133249 !important;
+    min-height: 100px;
+    border-radius: 3px;
+}
+
+footer aside:nth-child(2) ul{
+    transform:translate(10px, 10px);
+}
+
+footer aside:nth-child(2) a {
+    color: #1E3249 !important;
+}
+
+img {
+    border-radius: 7px;
+}
+
+
 
 .list-table table, .list-table th, .list-table td {
     border:none;
@@ -70,6 +99,10 @@ img {
     margin-right:0px;
     list-style-type: disc;
     
+}
+
+.list-table td,.list-table th {
+    padding:0;
 }
 
 #search-icon #search-icon-icon, .mobile-nav-frame form.search input[type=search] {
@@ -152,14 +185,14 @@ body.home #main{
 }
 
 .wp-block-button .wp-block-button__link:hover {
-    background-color: rgba(184, 163, 137, 0.99);
+    background-color: rgba(129, 115, 94, 0.8);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     color:#fff;
 }
 
 .wp-block-button .wp-element-button {
-    background-color: #A8926E;
+    background-color: #81735e;
     color: #fff;
     border-radius: 7px;
     font-weight: 700;
