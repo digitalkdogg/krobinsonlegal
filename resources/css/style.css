@@ -4,40 +4,20 @@ Author: Kevin Bollman
 Description: Your description goes here
 Version: 1.0
 Template: vantage
-
-This is the child theme for Vantage theme, generated with Generate Child Theme plugin by catchthemes.
-
-(optional values you can add: Theme URI, Author URI, License, License URI, Tags, Text Domain)
 */
 
+/* =====================================================
+   Global / Base Styles
+===================================================== */
+
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
-    color:#444;
+    color: #444;
 }
 
-.logo-wrapper img{
-    max-height: 50px;
-    max-width: 120px;
-}
-
-.main-navigation {
-    background: #1E3249
-}
-
-.main-navigation ul li a, .main-navigation-container a[href^="tel"] {
-    color: #dbdbdb;
-}   
-
-.main-navigation-container a[href^="tel"]:before {
-    content: "\f095";
-    font-family: FontAwesome;
-    margin-right: 5px;
-}
-
-.main-navigation ul li:hover > a, .main-navigation ul li.focus > a {
-    background: #E5D4B7;
-    color: #1E3249;
+img {
+    border-radius: 7px;
 }
 
 a {
@@ -45,28 +25,205 @@ a {
 }
 
 a:hover {
-    color: #E5D4B7; 
+    color: #E5D4B7;
 }
 
-p, .entry-content {
-    color:#444;
+p,
+.entry-content {
+    color: #444;
 }
 
 .dark-text {
-    color:#635c62;
+    color: #635c62;
     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* =====================================================
+   Header / Masthead
+===================================================== */
+
+#masthead.masthead-logo-in-menu .main-navigation {
+    zoom: 1;
+    /* box-shadow: 0px 7px 7px 2px #1E3249; */
+}
+
+#masthead.masthead-logo-in-menu .logo > img {
+    filter: invert(1) drop-shadow(1px 7px 7px white);
+    width: 80px;
+}
+
+.logo-wrapper img {
+    max-height: 50px;
+    max-width: 120px;
+}
+
+/* =====================================================
+   Navigation
+===================================================== */
+
+.main-navigation {
+    background: #1E3249;
+}
+
+.main-navigation ul li a,
+.main-navigation-container a[href^="tel"] {
+    color: #dbdbdb;
+}
+
+.main-navigation-container a[href^="tel"]:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+.main-navigation ul li:hover > a,
+.main-navigation ul li.focus > a {
+    background: #E5D4B7;
+    color: #1E3249;
+}
+
+/* =====================================================
+   Homepage Layout
+===================================================== */
+
+body.home #main {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* =====================================================
+   Content & Gutenberg Blocks
+===================================================== */
+
+.entry-content > div[class^='wp-block-'] {
+    margin-bottom: 0;
+}
+
+.wp-block-cover .has-background-dim:not([class*=-background-color]) {
+    background-color: #f3edde;
+}
+
+/* Block animations */
+.wp-block-group {
+    filter: opacity(0.7);
+    scale: 0.8;
+    transition: all 0.5s ease-out;
+}
+
+.wp-block-group.visible,
+.wp-block-cover.visible,
+.wp-block-column.visible {
+    scale: 1;
+    filter: unset;
+}
+
+.wp-block-group.visible-no-animation {
+    scale: 1;
+    transition: unset;
+    filter: unset;
+}
+
+/* =====================================================
+   Full Width & Layout Utilities
+===================================================== */
+
+.wp-block-group.force-full-width,
+.wp-block-cover.force-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.force-full-width .wp-block-cover__inner-container,
+.force-full-width .wp-block-group__inner-container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-block-group.force-margin-width,
+.wp-block-cover.force-margin-width {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =====================================================
+   Buttons
+===================================================== */
+
+.wp-block-button .wp-element-button {
+    background-color: #81735e;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: background-color 0.2s ease,
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+    background-color: rgba(129, 115, 94, 0.8);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+/* =====================================================
+   Tables / Lists
+===================================================== */
+
+.list-table table,
+.list-table th,
+.list-table td,
+.list-table table td,
+.list-table table th {
+    border: none;
+}
+
+.list-table td,
+.list-table th {
+    padding: 0;
+}
+
+.list-table ul {
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: disc;
+}
+
+/* =====================================================
+   Hero / Special Sections
+===================================================== */
+
+.nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background {
+    background: linear-gradient(
+        90deg,
+        rgba(243, 237, 221, 0.74) 50%,
+        rgba(255, 255, 255, 0.1) 83%
+    );
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
 footer .dark-text {
-    color:#333;
+    color: #333;
 }
 
 footer h3 {
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-footer p, footer a {
-    color:white;
+footer p,
+footer a {
+    color: white;
 }
 
 footer aside:nth-child(2) {
@@ -76,170 +233,79 @@ footer aside:nth-child(2) {
     border-radius: 3px;
 }
 
-footer aside:nth-child(2) ul{
-    transform:translate(10px, 10px);
+footer aside:nth-child(2) ul {
+    transform: translate(10px, 10px);
 }
 
 footer aside:nth-child(2) a {
     color: #1E3249 !important;
 }
 
-img {
-    border-radius: 7px;
-}
-
-
-
-.list-table table, .list-table th, .list-table td, .list-table table td, .list-table table th {
-    border:none;
-}   
-
-.list-table ul {
-    margin-left:0px;
-    margin-right:0px;
-    list-style-type: disc;
-    
-}
-
-.list-table td,.list-table th {
-    padding:0;
-}
-
-#search-icon #search-icon-icon, .mobile-nav-frame form.search input[type=search] {
-   display:none !important;
-}  
-
-#colophon #theme-attribution, #colophon #site-info {
-    display:none !important;    
-}
-
-#masthead.masthead-logo-in-menu .main-navigation {
-    zoom: 1;
-    /*box-shadow: 0px 7px 7px 2px #1E3249; */
-}
-
-#masthead.masthead-logo-in-menu .logo > img {
-    filter: invert(1) drop-shadow(1px 7px 7px white);
-    width: 80px;
-}
-
-.entry-content > div[class^='wp-block-'] {
-    margin-bottom:0;
-}
-
-body.home #main{
-    padding-top:0px;
-    padding-bottom:0px;
-}
+/* =====================================================
+   Utility Classes
+===================================================== */
 
 .border-bottom-light-white {
     border-bottom: 1px solid #555;
 }
 
-.wp-block-cover .has-background-dim:not([class*=-background-color]) {
-    background-color:#f3edde;
-}
-
-.wp-block-group {
-    filter:opacity(0.7);
-    scale: 0.8;
-    transition: all 0.5s ease-out;   
-}
-
-.wp-block-group.visible, .wp-block-cover.visible, .wp-block-column.visible {
-    scale:1;
-    filter: unset;
-}
-
-.wp-block-group.visible-no-animation {
-    scale:1;
-    transition: unset;
-    filter: unset;
-}
-
-.wp-block-group.force-full-width, .wp-block-cover.force-full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.force-full-width .wp-block-cover__inner-container, .force-full-width .wp-block-group__inner-container {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wp-block-group.force-margin-width, .wp-block-cover.force-margin-width {
-
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-  /*  transform: translateX(calc(25vw + 70px)); */
-}
-
 .height-70vh {
     height: 70vh;
-    min-height:70vh;
+    min-height: 70vh;
 }
 
 .max-width-40-percent {
-    max-width:40%;
+    max-width: 40%;
 }
 
 .font-weight-900 {
     font-weight: 900;
 }
 
-.wp-block-button .wp-block-button__link:hover {
-    background-color: rgba(129, 115, 94, 0.8);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    color:#fff;
+/* =====================================================
+   Hidden / Disabled Elements
+===================================================== */
+
+#search-icon #search-icon-icon,
+.mobile-nav-frame form.search input[type=search] {
+    display: none !important;
 }
 
-.wp-block-button .wp-element-button {
-    background-color: #81735e;
-    color: #fff;
-    border-radius: 7px;
-    font-weight: 700;
-    padding-left:30px;
-    padding-right:30px;
-    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+#colophon #theme-attribution,
+#colophon #site-info {
+    display: none !important;
 }
 
-.nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background {
-    background: linear-gradient(90deg, rgba(243, 237, 221, 0.74) 50%, rgba(255, 255, 255, 0.1) 83%);
-}
-
+/* =====================================================
+   Responsive
+===================================================== */
 
 @media screen and (max-width: 800px) {
-  .align-items-mobile-end {
-    align-items: flex-end;
-  }
 
-  .nfd-wb-hero__hero-20 img.wp-block-cover__image-background {
-    opacity:.5;
-  }
+    .align-items-mobile-end {
+        align-items: flex-end;
+    }
 
-  .nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background  {
-    background: rgba(243, 237, 221, 0.55);
-    opacity:0.55;
-  }
+    .nfd-wb-hero__hero-20 img.wp-block-cover__image-background {
+        opacity: 0.5;
+    }
 
-  .mobile-height-45vh {
-    height: 80vh;
-    min-height:80vh;
-  }
+    .nfd-wb-hero__hero-20 .force-full-width .wp-block-cover__background {
+        background: rgba(243, 237, 221, 0.55);
+        opacity: 0.55;
+    }
 
-  .force-full-width .wp-block-cover__inner-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .mobile-height-45vh {
+        height: 80vh;
+        min-height: 80vh;
+    }
 
-.nfd-wb-hero__hero-20 .force-full-width .wp-block-columns {
-    flex-direction: column;
-  }
+    .force-full-width .wp-block-cover__inner-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nfd-wb-hero__hero-20 .force-full-width .wp-block-columns {
+        flex-direction: column;
+    }
 }
