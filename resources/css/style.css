@@ -123,9 +123,17 @@ img {
     width: 80px;
 }
 
+.entry-content > div[class^='wp-block-'] {
+    margin-bottom:0;
+}
+
 body.home #main{
     padding-top:0px;
     padding-bottom:0px;
+}
+
+.border-bottom-light-white {
+    border-bottom: 1px solid #555;
 }
 
 .wp-block-cover .has-background-dim:not([class*=-background-color]) {
