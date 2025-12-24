@@ -227,6 +227,20 @@ footer p.site-title {
         flex-direction: column;
     }
 
+    .wp-block-group.has-background {
+        padding:10px;
+    }
+
+    .wp-block-cover > img
+    {
+        border-radius: 0;
+    }
+
+    footer#colophon {
+        padding-left: 10px;
+        padding-right:10px;
+    }
+
     footer footer-dets {
         text-align:center;
     }
