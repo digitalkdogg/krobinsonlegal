@@ -284,7 +284,7 @@
     margin-right: 5px;
     font-size: 1.2em;
     min-width:15px;
-    display: inline-table;
+    display: inline-block;
 }
 
 li.icon {
