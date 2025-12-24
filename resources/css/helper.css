@@ -1,0 +1,458 @@
+/* =====================================================
+   Flexbox Utilities
+===================================================== */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+/* =====================================================
+   Typography
+===================================================== */
+
+.dark-text {
+    color: #635c62;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* =====================================================
+   Spacing - Margin
+===================================================== */
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =====================================================
+   Spacing - Padding
+===================================================== */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+/* =====================================================
+   Display Utilities
+===================================================== */
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* =====================================================
+   Width & Height
+===================================================== */
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.max-width-40-percent {
+    max-width: 40%;
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.height-70vh {
+    height: 70vh;
+    min-height: 70vh;
+}
+
+.height-auto {
+    height: auto;
+}
+
+/* =====================================================
+   Borders
+===================================================== */
+
+.border-bottom-light-white {
+    border-bottom: 1px solid #555;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-radius-7 {
+    border-radius: 7px;
+}
+
+
+
+/* =====================================================
+   Icons
+===================================================== */
+
+.icon:before {
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+li.icon {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.icon-addressbook:before {
+    content: "\f2b9";
+}
+
+.icon-map:before {
+    content: "\f041";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-envelope:before {
+    content: "\f0e0";
+}
+
+.icon-facebook:before {
+    content: "\f099";
+}
+
+
+/* =====================================================
+   Full Width & Layout Utilities
+===================================================== */
+
+.wp-block-group.force-full-width,
+.wp-block-cover.force-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.force-full-width .wp-block-cover__inner-container,
+.force-full-width .wp-block-group__inner-container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-block-group.force-margin-width,
+.wp-block-cover.force-margin-width, .force-margin-width {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =====================================================
+   Tables / Lists
+===================================================== */
+
+.list-table table,
+.list-table th,
+.list-table td,
+.list-table table td,
+.list-table table th {
+    border: none;
+}
+
+.list-table td,
+.list-table th {
+    padding: 0;
+}
+
+.list-table ul {
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: disc;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+
+/* =====================================================
+   Colors & Backgrounds
+===================================================== */
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-light-gray {
+    background-color: #f5f5f5;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-dark {
+    color: #333;
+}
+
+/* =====================================================
+   Overflow
+===================================================== */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* =====================================================
+   Z-Index
+===================================================== */
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+
+/* =====================================================
+   Responsive Utilities
+===================================================== */
+
+@media screen and (max-width: 800px) {
+    .align-items-mobile-end {
+        align-items: flex-end;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+    
+    .mobile-text-center {
+        text-align: center;
+    }
+    
+    .mobile-width-100 {
+        width: 100%;
+    }
+    
+    .mobile-hide {
+        display: none;
+    }
+    
+    .mobile-margin-bottom-20 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .desktop-hide {
+        display: none;
+    }
+}

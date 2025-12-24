@@ -12,6 +12,11 @@ function vantage_child_enqueue_styles() {
         get_stylesheet_directory_uri() . '/resources/css/style.css',
         array('parent-style')
     );
+
+     wp_enqueue_style( 'helper-child-style',
+        get_stylesheet_directory_uri() . '/resources/css/helper.css',
+        array('parent-style')
+    );
 }
 function vantage_child_enqueue_scripts() {
     wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/resources/js/legal.js', array('jquery'), '1.0', true );

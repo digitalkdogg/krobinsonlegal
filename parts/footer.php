@@ -4,12 +4,17 @@
  */
 ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class = "flex wp-block-group force-margin-width">
+	<div class = "flex force-margin-width">
 		<div class="flex-item margin-right-10">
-			<p class = "site-title"><?php bloginfo('name'); ?><br />
-			Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?> All Rights Reserved</p>
-			<br /><br /> 
-			<a href = '/contact'><button>Contact Us</button></a>
+			<p class = "site-title"><?php bloginfo('name'); ?></p>
+			Mailing Address :  P.O. Box 1027, Harrison, AR 72602 <br />
+			<br />
+			
+			<div class = "flex justify-start">
+				<a href = '/contact'><button>Contact Us</button></a>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/img/courthouse-404.png" style = "height: 100px; width: 200px; opacity: 0.5;" aria-hidden="true" />
+			</div>
+			Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?> All Rights Reserved 
 		</div>
 		<div class="flex-item">
 			<?php 

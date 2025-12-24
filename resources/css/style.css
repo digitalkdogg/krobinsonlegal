@@ -37,40 +37,6 @@ p,
     color: #444;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dark-text {
-    color: #635c62;
-    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
-}
-
-.margin-left-10 {
-    margin-left: 10px;
-}
-
-.margin-right-10 {
-    margin-right: 10px;
-}   
-
-.icon:before {
-    font-family: 'FontAwesome';
-    margin-right: 5px;
-    font-size: 1.2em;
-}
-
-li.icon {
-    list-style: none;
-    margin-left: -30px;
-}
-
-.icon-addressbook:before {
-    content: "\f2b9";
-
-}
 
 /* =====================================================
    Header / Masthead
@@ -158,44 +124,20 @@ body.home #main {
 }
 
 /* =====================================================
-   Full Width & Layout Utilities
-===================================================== */
-
-.wp-block-group.force-full-width,
-.wp-block-cover.force-full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
-.force-full-width .wp-block-cover__inner-container,
-.force-full-width .wp-block-group__inner-container {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wp-block-group.force-margin-width,
-.wp-block-cover.force-margin-width {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* =====================================================
    Buttons
 ===================================================== */
 
 .wp-block-button .wp-element-button, button {
     background-color: #81735e;
+    border: none;
     color: #fff;
     border-radius: 7px;
     font-weight: 700;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 50px;
+    font-weight: bold !important;
+    font-size: 15px;
     transition: background-color 0.2s ease,
                 transform 0.15s ease,
                 box-shadow 0.15s ease;
@@ -206,29 +148,6 @@ body.home #main {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     color: #fff;
-}
-
-/* =====================================================
-   Tables / Lists
-===================================================== */
-
-.list-table table,
-.list-table th,
-.list-table td,
-.list-table table td,
-.list-table table th {
-    border: none;
-}
-
-.list-table td,
-.list-table th {
-    padding: 0;
-}
-
-.list-table ul {
-    margin-left: 0;
-    margin-right: 0;
-    list-style-type: disc;
 }
 
 /* =====================================================
@@ -260,40 +179,9 @@ footer a {
     color: white;
 }
 
-footer aside:nth-child(2) {
-    background: #fbfaf3;
-    color: #133249 !important;
-    min-height: 100px;
-    border-radius: 3px;
-}
-
-footer aside:nth-child(2) ul {
-    transform: translate(10px, 10px);
-}
-
-footer aside:nth-child(2) a {
-    color: #1E3249 !important;
-}
-
-/* =====================================================
-   Utility Classes
-===================================================== */
-
-.border-bottom-light-white {
-    border-bottom: 1px solid #555;
-}
-
-.height-70vh {
-    height: 70vh;
-    min-height: 70vh;
-}
-
-.max-width-40-percent {
-    max-width: 40%;
-}
-
-.font-weight-900 {
-    font-weight: 900;
+footer p.site-title {
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
 /* =====================================================
@@ -315,10 +203,6 @@ footer aside:nth-child(2) a {
 ===================================================== */
 
 @media screen and (max-width: 800px) {
-
-    .align-items-mobile-end {
-        align-items: flex-end;
-    }
 
     .nfd-wb-hero__hero-20 img.wp-block-cover__image-background {
         opacity: 0.5;
