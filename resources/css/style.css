@@ -24,11 +24,11 @@ img {
     border-radius: 7px;
 }
 
-a {
+a, .entry-content a, .entry-content a:visited {
     color: #1E3249;
 }
 
-a:hover {
+a:hover, .entry-content a:hover{
     color: #E5D4B7;
 }
 
