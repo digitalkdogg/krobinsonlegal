@@ -226,4 +226,12 @@ footer p.site-title {
     .nfd-wb-hero__hero-20 .force-full-width .wp-block-columns {
         flex-direction: column;
     }
+
+    footer footer-dets {
+        text-align:center;
+    }
+    footer .copyright-text {
+        text-align:center;
+        display:flex;
+    }
 }

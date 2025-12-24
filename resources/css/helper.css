@@ -307,7 +307,7 @@ li.icon {
 }
 
 .icon-facebook:before {
-    content: "\f099";
+    content: "\f09a";
 }
 
 
@@ -448,6 +448,11 @@ li.icon {
     
     .mobile-margin-bottom-20 {
         margin-bottom: 20px;
+    }
+
+    .flex-column-reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 

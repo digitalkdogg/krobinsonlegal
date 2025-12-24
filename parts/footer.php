@@ -8,7 +8,7 @@
 	
 	<?php if ($footer_page) { ?>
 		
-		<div class = "flex force-margin-width">
+		<div class = "flex force-margin-width flex-column-reverse-mobile">
 			<div class="flex-item margin-right-10">
 				<?php require('footer-dets.php'); ?>
 			</div>
