@@ -30,4 +30,12 @@ function vantage_child_enqueue_scripts() {
         'another_field' => get_post_meta( get_the_ID(), 'another_custom_field_key', true ),
     ) );
 }
+
+add_filter('wp_robots', 'my_noindex_specific_pages');
+function my_noindex_specific_pages(array $robots) {
+    if (is_page('footer') || is_page('thank-you')) {
+        $robots['noindex'] = true;
+    }
+    return $robots;
+}
 ?>
