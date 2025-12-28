@@ -220,6 +220,10 @@
     display: inline-block;
 }
 
+.display-inline-flex {
+    display: inline-flex;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -263,6 +267,10 @@
 
 .border-bottom-light-white {
     border-bottom: 1px solid #555;
+}
+
+.border-bottom-white {
+    border-bottom: 1px solid #ccc;
 }
 
 .border-none {

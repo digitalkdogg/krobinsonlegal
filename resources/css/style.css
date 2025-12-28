@@ -24,12 +24,16 @@ img {
     border-radius: 7px;
 }
 
-a, .entry-content a, .entry-content a:visited {
+a, .entry-content a, .entry-content a:visited, .dark-text a  {
     color: #1E3249;
 }
 
 a:hover, .entry-content a:hover{
     color: #E5D4B7;
+}
+
+.dark-text a:hover {
+    color: #81735e;
 }
 
 p,
@@ -48,7 +52,7 @@ p,
 
 #masthead.masthead-logo-in-menu .logo > img {
     filter: drop-shadow(1px 2px 6px #81735e);
-    width: 60px;
+    width: 55px;
 }
 
 .logo-wrapper img {
