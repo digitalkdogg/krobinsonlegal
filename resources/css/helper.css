@@ -291,13 +291,13 @@
     font-family: 'FontAwesome';
     margin-right: 5px;
     font-size: 1.2em;
-    min-width:15px;
+    min-width:1em;
     display: inline-block;
 }
 
 li.icon {
     list-style: none;
-    margin-left: -30px;
+    margin-left: -30px !important;
 }
 
 .icon-addressbook:before {
