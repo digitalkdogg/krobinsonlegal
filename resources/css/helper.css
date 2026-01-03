@@ -464,6 +464,10 @@ li.icon {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    .flex-justify-center-mobile {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 801px) {
